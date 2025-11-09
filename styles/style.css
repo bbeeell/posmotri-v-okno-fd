@@ -91,8 +91,9 @@ ol {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: end;
 }
+
 
 .result__video {
   width: 100%;
@@ -178,9 +179,12 @@ ol {
 }
 
 .content__video-card-description {
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
   overflow: hidden;
+  text-overflow: ellipsis;
   max-width: 190px;
   font-family: Fira Sans Condensed, sans-serif;
   font-size: 18px;
@@ -189,11 +193,6 @@ ol {
   line-height: 16px;
 }
 
-.search-form {
-  display: flex;
-  flex-direction: row;
-  align-items: end;
-}
 
 .search-form__fieldset {
   border: 0;
@@ -312,7 +311,7 @@ input[type="checkbox"]:checked + span::before {
 }
 
 .more-button {
-  width: 385px;
+  width: 399px;
   min-height: 34px;
 }
 
